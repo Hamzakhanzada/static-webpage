@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tailwind CSS Design</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://kit.fontawesome.com/899352ce90.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="/wp-content/themes/skill-bridgestylesheet" href="/login/tailwind.css">
+    <!-- <style>
+        .menu-item-203 {
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; 
+        }
+        .menu-item-202 {
+            display: flex;
+            padding: 12px 24px;
+            align-items: center;
+            gap: 8px;
+            border-radius: 6px;
+            background: #FF9500;
+            color: white;
+
+        } 
+        .nav .current-menu-item a {
+            background-color: #F1F1F3;
+            border-radius: 8px;
+            padding: 14px 20px;
+
+
+        }
+        .nav  li{
+            padding: 14px 20px;
+
+        }
+         /* .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            background:#F1F1F3;
+
+         }
+         .nav.menu-item {
+            padding: 14px 20px;
+
+         } */
+    </style> -->
+    
+    <script>tailwind.config = {
+            theme: {
+                colors: {
+                    absolute: {
+                        white: '#FFF',
+                        black: '#000',
+                    },
+                    orange: {
+                        50: '#FF9500',
+                        70: '#FFBF66',
+                        75: '#FFCA80',
+                        80: '#FFD499',
+                        90: '#FFEACC',
+                        95: '#FFF4E5',
+                        97: '#FFF9F0',
+                        99: '#FFFDFA',
+                    },
+
+                    white: {
+                        90: '#E4E4E7',
+                        95: '#F1F1F3',
+                        97: '#F7F7F8',
+                        99: '#FCFCFD',
+
+                    },
+                    grey: {
+                        10: '#191919',
+                        15: '#262626',
+                        20: '#333333',
+                        30: '#4C4C4D',
+                        35: '#59595A',
+                        40: '#656567',
+                        60: '#98989A',
+                        70: '#B3B3B3'
+                    }
+
+                }
+            }
+        }</script>
+
+</head>
+
+ <body class="bg-white-97 ">
+ <div class=" px-4 sm:px-6 md:px-8 mt-8  ">
+        <div class="grid gap-2">
+            <button class="flex py-2.5 px-0 md:py-4 justify-center items-center gap-6 self-stretch rounded-[6px] bg-orange-50 text-white-95  text-sm normal-case font-normal leading-[150%]">
+                Free Courses 🌟 Sale Ends Soon, Get It Now
+                <svg class="h-[20px] w-[20px] text-white-95" width="20" height="20" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <line x1="15" y1="16" x2="19" y2="12"></line>
+                    <line x1="15" y1="8" x2="19" y2="12"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
+<header class="bg-white ">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center ">
+
+        <div class="flex items-center space-x-2">
+            <!-- <img src="/wp-content/themes/skill-bridge/images/logo.png" alt="Logo" class="h-[32px] w-[32px]"> -->
+             <a href="/" class="custom-logo-link" rel="home"><img width="44" height="45" src="/wp-content/uploads/2024/10/Logo-9.png" class="custom-logo" alt="Ecommerce Print Shop" decoding="async"></a>        </div>
+
+        <div class="md:hidden">
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle" class="cursor-pointer text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </label>
+        </div>
+
+        <nav class="flex hidden peer-checked:flex flex-col md:flex md:flex-row md:space-x-8 py-2 md:py-4 lg:py-6 px-4 md:px-[60px] justify-between items-center border-b border-white-95 mr-auto ml-[50px]">
+            <ul class="flex space-x-4">
+<li class="text-gray-700 hover:text-blue-500"><a href="/home/" class="px-4 py-2 rounded-md hover:bg-gray-200">Home</a></li>
+<li class="text-gray-700 hover:text-blue-500"><a href="/courses/" class="px-4 py-2 rounded-md hover:bg-gray-200">Courses</a></li>
+<li class="text-gray-700 hover:text-blue-500"><a href="/about-us/" class="px-4 py-2 rounded-md hover:bg-gray-200">About-Us</a></li>
+<li class="text-gray-700 hover:text-blue-500"><a href="/pricing/" class="px-4 py-2 rounded-md hover:bg-gray-200">Pricing</a></li>
+<li class="text-gray-700 hover:text-blue-500"><a href="/contact/" class="px-4 py-2 rounded-md hover:bg-gray-200">Contact</a></li>
+</ul>        </nav>
+
+        <div class="space-x-4 hidden md:block">
+            <!-- <a href="#" class="text-sm md:text-base lg:text-lg font-normal leading-[150%] md:leading-6">Sign Up</a>
+            <a href="#" class=" py-2 md:py-3 px-4 md:px-6 items-center gap-2 md:gap-4 rounded-[6px] bg-orange-50 text-white-95  text-sm md:text-base lg:text-lg font-normal leading-[150%] md:leading-6 ">Login</a> -->
+            <ul class="flex space-x-4">
+<li><a href="/sign-up/" class="px-4 py-2 rounded-md  text-white ">Sign Up</a></li>
+<li><a href="/login/" class="px-4 py-2 rounded-md bg-orange-50 text-white-99 hover:bg-blue-600">Login</a></li>
+</ul>        </div>
+    </div>
+
+
+</header>
+<section class="py-10">
+    <div class="container mx-auto px-4 lg:px-26 gap-10 grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div class="mb-10 lg:mb-0 ">
+            <div class="mb-10 lg:mb-20">
+                <h2 class="text-3xl lg:text-4xl font-medium mb-3">Students Testimonials</h2>
+                <p class="text-gray-600 text-base lg:text-lg">
+                    Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+                </p>
+            </div>
+            <div class="col ">
+            <div class="bg-white-99 border-0 rounded-b-none p-10 items-start gap-2 self-stretch ">
+                <p class="text-grey-30  text-base normal-case font-normal leading-6">
+                    The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
+                </p>
+            </div>
+            <hr class="border-white-97">
+            <div class="flex justify-between items-center p-3 bg-white-95 rounded-b-lg">
+                <div class="flex items-center">
+                    <img src="/wp-content/themes/skill-bridge ./images/mens.png" alt="sarah" class="w-10 h-10 rounded-full">
+                    <span class="text-base font-normal font-semibold px-2 leading-6">Sarah L</span>
+                </div>
+                <div>
+                    <button class="flex p-4 px-4 justify-center items-center gap-2 rounded-md border border-white-95 bg-white-97" type="button">Read Full Story</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+        <div class="w-full mx-auto lg:mx-0 bg-white-99  p-8 rounded-lg">
+            <h2 class="text-5xl  font-semibold text-center mb-6">Login</h2>
+            <p class="text-center text-lg text-gray-30 mb-8">Create an account to unlock exclusive features.</p>
+  
+            <form action="#" autocomplete="off">
+            <div class="mb-4">
+                    <label for="name" autocomplete="off" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-white-97 focus:outline-none border-white-95 mt-2 px-3 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500" placeholder="Enter your Name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" autocomplete="off" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-white-97 focus:outline-none border-white-95 mt-2 px-3 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <div class="relative">
+                        <input type="password" id="password" autocomplete="new-password" name="password" class="w-full  border-white-95 mt-2 focus:outline-none border-none bg-white-97 px-3 py-2 border border-gray-300 rounded-md focus:ring-orange-500 focus:border-orange-500" placeholder="Enter your Password" required>
+                        <button type="button" class="absolute inset-y-0 right-3 flex items-center">
+                        <i class="fa-solid fa-eye text-grey-30 mt-2"></i>       
+                                   </button>
+                    </div>
+                </div>
+
+                <div class="flex items-center mb-4">
+                    <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded">
+                    <label for="remember" class="ml-2 text-sm text-gray-900">Remember Me</label>
+                </div>
+
+                <div>
+                    <button type="submit" class="w-full bg-orange-50 text-white-99 py-2 px-4 rounded-md hover:bg-orange-600 transition">Login</button>
+                </div>
+
+                <div class="mt-4 text-sm text-center">
+                    <a href="#" class="text-orange-500 hover:underline">Forgot Password?</a>
+                </div>
+
+               <span class="flex justify-between mt-2">
+                <hr class="w-5/12 mt-3 text-white-90">
+                <span class="text-gray-30">OR</span>
+                <hr class="w-5/12 mt-3 text-white-90">
+               </span>
+
+                <div>
+                    <button type="button" class="w-full gap-2 flex items-center justify-center bg-white-97 border-white-95 mt-4 text-gray-700 py-2 px-4  border-gray-300 rounded-md shadow-sm hover:bg-gray-50 transition">
+                        <!-- <i class="fab fa-google mr-2"></i> -->
+                         <img src="/wp-content/themes/skill-bridge./images/google.svg" alt="">
+                        Login with Google
+                    </button>
+                </div>
+
+                <div class="mt-4 text-sm text-center mt-2">
+                    <p>Don't have an account? <a href="#" class="text-orange-500  underline">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer-section mt-16 flex flex-col p-[60px_80px_20px_80px] bg-white-99">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="col-span-1">
+        <!-- <img src="/wp-content/themes/skill-bridge ./images/logo.png" alt="logo-2" class="mb-4"> -->
+         <a href="/" class="custom-logo-link" rel="home"><img width="44" height="45" src="/wp-content/uploads/2024/10/Logo-9.png" class="custom-logo" alt="Ecommerce Print Shop" decoding="async"></a>        <ul class="list-none mt-4">
+          <li class="flex items-center p-2">
+            <img src="/wp-content/themes/skill-bridge./images/message.png" alt="mail-Icon" class="mr-2">
+            <span class="paragraph">hello@skillbridge.com</span>
+          </li>
+          <li class="flex items-center p-2">
+            <img src="/wp-content/themes/skill-bridge./images/call.png" alt="phone-Icon" class="mr-2">
+            <span class="paragraph">+91 91813 23 2409</span>
+          </li>
+          <li class="flex items-center p-2">
+            <img src="/wp-content/themes/skill-bridge./images/mark.png" alt="location-Icon" class="mr-2">
+            <span class="paragraph">Somewhere in the World</span>
+          </li>
+        </ul>          
+      </div>
+
+      <div class="col-span-1">
+        <h5 class="footer-headings mb-2 text-[#262626]  text-lg font-semibold leading-6">Home</h5>
+        <ul class="list-none">
+          <li class="benefits-text mb-2 text-[#59595A] font-be-vietnam-pro text-base font-normal leading-6">Benefits</li>
+          <li class="benefits-text mb-2 text-[#59595A] font-be-vietnam-pro text-base font-normal leading-6">Our Courses</li>
+          <li class="benefits-text mb-2 text-[#59595A] font-be-vietnam-pro text-base font-normal leading-6">Our Testimonials</li>
+          <li class="benefits-text mb-2 text-[#59595A] font-be-vietnam-pro text-base font-normal leading-6">Our FAQ</li>  
+        </ul>
+      </div>
+
+      <div class="col-span-1">
+        <h5 class="footer-headings mb-2 text-[#262626]  text-lg font-semibold leading-6">About Us</h5>
+        <ul class="list-none">
+          <li class="benefits-text mb-2 text-[#59595A] font-be-vietnam-pro text-base font-normal leading-6">Company</li>
+          <li class="benefits-text mb-2 text-[#59595A] font-be-vietnam-pro text-base font-normal leading-6">Achievements</li>
+          <li class="benefits-text mb-2 text-[#59595A] font-be-vietnam-pro text-base font-normal leading-6">Our Goals</li>  
+        </ul>
+      </div>
+
+      <div class="col-span-1">
+        <h5 class="footer-headings mb-2 text-[#262626]  text-lg font-semibold leading-6">Social Profiles</h5>
+        <div class="flex gap-5">
+          <img src="/wp-content/themes/skill-bridge ./images/fb.svg" alt="Facebook" class="w-12 h-12">
+          <img src="/wp-content/themes/skill-bridge ./images/tw.svg" alt="Twitter" class="w-12 h-12">
+          <img src="/wp-content/themes/skill-bridge ./images/in.svg" alt="inden" class="w-12 h-12">    
+        </div>
+      </div>
+    </div>
+    
+    <hr class="my-5 text-white-95"> 
+
+    <div class="text-center copyright-text">
+      <p class="">© 2023 Skillbridge. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
